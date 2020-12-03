@@ -1,43 +1,70 @@
-*
-{
-background-color: white;
+*{
+background-color white;
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
+
+
                 /* Header */
 .header {
-  
 display: flex;
 justify-content: space-between;
-padding: 10px;
+border: 1px solid black;
+margin-left: 100px;
+margin-right: 100px; 
 }
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .header { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .header { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .header { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+  }
 
 .logo img
 {
 width: 100px;
 height: auto;
-margin-left: 90px;
-display: flex;
+border: 1px solid black;
 }
 
 .nav
 {
-margin-top: 10px;
-display: flex;
-justify-content: flex-end;
 color: #0065FC;
 text-decoration: none;
 padding: 5px;
-font-family: 'Raleway';	
+font-family: 'Raleway';	t
 font-size: 15px;  
-margin-right: 100px; 
+border: 1px solid black;
 }
 
 .nav li
 { 
 display: inline-flex;
-justify-content: flex-end;
+
 }
 
 .nav li a
@@ -47,6 +74,20 @@ padding: 5px 5px;
 font-family: 'Raleway';	
 font-size: 15px;	
 text-decoration: none;
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .nav li a { 
+    font-size: 13px;
+  border: 1px solid black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav li a { 
+  font-size: 13px;
+  border: 1px solid black;
+  }
 }
 
 .nav li a:hover
@@ -63,30 +104,112 @@ color: black;
 height: 50px;
 margin-top: 15px;
 margin-left: 100px;
-    
+border: 1px solid yellow; 
+margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .find { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .find { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .find { 
+    margin-left: 30px;
+    margin-right: 30px; 
+    font-size: 12px;
+  }
+  .find h3 {
+    font-size: 12px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .find { 
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 12px;
+  }
+  .find h3 {
+   font-size: 12px;
+  }
+  }
 
                 /* Search Bar */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 .wrapper{
-  border: 0px
+  margin-left: 100px;
+  margin-right: 100px; 
+  border: 1px solid blue;
+  margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .wrapper { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .wrapper { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .wrapper { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper { 
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  }
 
 .container {
-width: 320px;
+width: 300px;
 color: black;
 height: 42px;
-margin-top: 15px;
-margin-left: 100px;
 display: flex;
-
 justify-content: space-between;
+border: 1px solid black;
 }
 
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .container { 
+    height: 30px;
+    font-size: 10px;
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container { 
+    height: 30px;
+    font-size: 10px;
+    width: 210px;
+  }
+  }
+
 .input{
-width: 320px;
+width: 300px;
 border: 1px solid gray;
 background: transparent;
 border-radius: 50px;
@@ -96,8 +219,21 @@ height: 42px;
 padding: 0px 40px;
 position: absolute;
 margin-left: 0px;
-
 }
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .input { 
+    width: 200px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .input { 
+    width: 200px;
+    height: 30px;
+  }
+  }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: black;
@@ -120,6 +256,18 @@ margin-left: 0px;
     text-align: center;
   }
 
+  @media screen and (max-width: 768px) and (min-width: 600px) {
+    ::-webkit-input-placeholder { 
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    ::-webkit-input-placeholder { 
+      font-size: 10px;
+    }
+    }
+
   .close-btn{
     width: 70px;
     border-radius: 50px;
@@ -132,40 +280,141 @@ margin-left: 0px;
     border: 0;
     outline: none;
     font-weight: bold;
+    opacity: 1;
+    
   }
 
+  @media screen and (max-width: 1200px) and (min-width: 992px) {
+    .close-btn { 
+      
+    }
+  }
+  
+  @media screen and (max-width: 992px) and (min-width: 768px) {
+    .close-btn { 
+    
+    }
+  }
+  
+  @media screen and (max-width: 768px) and (min-width: 600px) {
+    .close-btn { 
+      height: 30px;
+      font-size: 10px;
+      width: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .close-btn { 
+      height: 30px;
+      font-size: 10px;
+      width: 50px;
+    }
+    }
 
         /* LINK ICON */
 
 .links
   { 
-    padding: 20px 20px;
+    
     font-family: 'Raleway';	
     font-size: 15px;
+    text-decoration: none;
+    border: 1px solid red;
+    margin-left: 100px;
+    margin-right: 100px; 
  }
 
+ @media screen and (max-width: 1200px) and (min-width: 992px) {
+  .links { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .links { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .links { 
+    margin-left: 30px;
+    margin-right: 30px; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links { 
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  }
+
 .links-grid{
-  width: 840px;
+ 
   display: flex;
   text-decoration: none;
-  margin-left: 75px;
-  justify-content: space-evenly;
+  border: 1px solid red;
+  justify-content: flex-start;
+  text-decoration: none;
+  flex-wrap: wrap;
   
 }
 
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .links.grid { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  }
+  a {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links.grid { 
+    display: flex;
+    flex-flow: row wrap;  
+  align-items: center;
+  justify-content: space-around;
+ 
+  }
+  }
+
  .Filters
  {
-  width: 100px;
+  width: 70px;
   border-radius: 50px;
   color: black;
-  font-weight: bold;
   height: 46px;
-  flex: 1;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-
  }
+
+ @media screen and (max-width: 768px) and (min-width: 600px) {
+  .Filters { 
+    
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Filters { 
+    
+    height: 30px;
+   
+  }
+  }
 
 
  .Filters a:hover{
@@ -178,14 +427,35 @@ margin-left: 0px;
   width: 130px;
   border-radius: 50px;
   color: black;
-  font-weight: bold;
   height: 46px;
-  flex: 1;
   cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
  }
+
+ @media screen and (max-width: 768px) and (min-width: 600px) {
+  .Low-Cost { 
+    
+    height: 30px;
+    display: flex;
+  justify-content: left;
+  align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Low-Cost { 
+    display: flex;
+  justify-content: left;
+  align-items: center;
+    height: 30px;
+   
+  }
+  }
  
- .Low-Cost a{
-   back
+ .Low-Cost a {
+   text-decoration: none;
  }
 
  .Low-Cost:hover,
@@ -200,17 +470,61 @@ margin-left: 0px;
    border-radius: 50px;
    height: 44px;
    margin-right: 5px;
+   border: 1px solid black;
+   position: flex;
+  
 }
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .fas { 
+    
+    height: 30px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fas { 
+    
+    height: 30px;
+    padding: 5px 10px;
+  }
+  }
 
 .Family-Friendly{
   border: 1px solid gray;
-  width: 155px;
+  width: 160px;
   border-radius: 50px;
   color: black;
-  font-weight: bold;
   height: 46px;
-  flex: 1;
   cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .Family-Friendly { 
+    
+    height: 30px;
+    display: flex;
+  justify-content: left;
+  align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Family-Friendly { 
+    
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  }
+
+.Family-Friendly a{
+  text-decoration: none;
 }
 
 .Family-Friendly:hover,
@@ -221,13 +535,38 @@ margin-left: 0px;
 
 .Romantic{
   border: 1px solid gray;
-  width: 110px;
+  width: 130px;
   border-radius: 50px;
   color: black;
-  font-weight: bold; 
-  flex: 1;
   height: 46px;
   cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .Romantic { 
+    
+    height: 30px;
+    display: flex;
+  justify-content: left;
+  align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Romantic { 
+    
+    height: 30px;
+    display: flex;
+  justify-content: left;
+  align-items: center;
+  }
+  }
+
+.Romantic a {
+  text-decoration: none;
 }
 
 .Romantic:hover,
@@ -241,10 +580,33 @@ margin-left: 0px;
   width: 150px;
   border-radius: 50px;
   color: black;
-  font-weight: bold;
-  flex: 1;
   height: 46px;
   cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .Pets-Allowed { 
+    height: 30px;
+    display: flex;
+  justify-content: left;
+  align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Pets-Allowed { 
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  }
+
+.Pets-Allowed a{
+  text-decoration: none;
 }
 
 .Pets-Allowed:hover,
@@ -266,16 +628,79 @@ margin-top: 5px;
 display: flex;
 margin-left: 100px;
 margin-right: 100px;
+border: 1px dashed violet;
+
 }
+
+@media screen and (max-width: 1400px) and (min-width: 1235px) {
+  .images-grid-container { 
+   
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (max-width: 1235px) and (min-width: 768px) {
+  .images-grid-container { 
+    margin-left: 0px;
+    margin-right: 30px; 
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .images-grid-container { 
+    margin-left: 0px;
+    margin-right: 30px; 
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .images-grid-container { 
+    margin-left: 0px;
+    margin-right: 30px;
+    flex-flow: row wrap;
+  }
+  }
+
           
 .images-grid
 {
-height: auto;
-width: 800px;
+width: 90%;
 border-radius: 30px;
-height: 520px;
-
+height: auto;
+border: 1px solid black;
+margin-bottom: 20px;
+box-shadow: 0px 2px 20px rgb(211, 207, 207);
 }
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .images-grid { 
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .images-grid { 
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .images-grid { 
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .images-grid { 
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  }
 
 .images-grid h4{
   margin-left: 20px;
@@ -283,15 +708,40 @@ height: 520px;
 
 .image-grid-left
 {
-  background-color:;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  height: 460px;
+  height: auto;
   border-radius: 30px;
-  width: 800px;
+  width: auto;
+  border: 1px solid violet;
+  justify-content: space-around;
   
 }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .image-grid-left { 
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .image-grid-left { 
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-grid-left { 
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+  }
+  }
 
 .image1-grid-item{
   border-radius: 30px;
@@ -299,6 +749,7 @@ height: 520px;
   width: 220px;
   margin: 15px;
   box-shadow: 0px 2px 20px rgb(211, 207, 207);
+`
 }
 
 .image1-grid-item a{
@@ -338,9 +789,14 @@ cursor: pointer;
   height: 21px;
   margin-top: 10px;
   width: 100px;
+  
 }
 
-.show-more :hover
+.show-more a{
+  text-decoration: none;
+}
+
+.show-more a:hover
 {
 text-decoration: underline;
 cursor: pointer;
@@ -350,25 +806,41 @@ cursor: pointer;
 
 .text-right h4{
   height: 21px;
-  margin-top: 10px;
+  margin-top: 20px;
 }    
 
-.images-grid-container
-{
-display: flex;  
-margin-left: 100px;
-margin-right: 100px ;
-}
-          
 .images-container-right
 {
 height: auto;
-width: 730px;
+width: auto;
 border-radius: 30px;
-height: 600px;
 margin-left: 70px;
-
+border: 1px solid black;
+flex: 1;
+box-shadow: 0px 2px 20px rgb(211, 207, 207);
 }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .images-container-right { 
+    margin-left: 30px;
+   margin-right: 30px;
+    
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .images-container-right { 
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .images-container-right { 
+     margin-left: 30px;
+     margin-right: 30px;
+  }
+  }
 
 .images-container-right h4{
   margin-left: 20px;
@@ -377,20 +849,17 @@ margin-left: 70px;
 
 .image-grid-right
 {
-  
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   height: 540px;
   border-radius: 30px;
-  
-  
 }
 
 .image1-item-right{
   border-radius: 30px;
   height: 150px;
-  width: 350px;
+  width: 330px;
   margin: 15px;
   display: flex;
   box-shadow: 0px 2px 20px rgb(211, 207, 207);
@@ -430,55 +899,19 @@ cursor: pointer;
   margin-top: 10px;
 }
 
-/*
-.accom{
-position: relative; 
-border: 1px solid black;
-float: top;
-}                        
-.images-grid-right
-{
-flex-wrap: wrap;
-display: flex;
-justify-content: flex-end;
-justify-content: space-between;
-height: auto; 
-width: 800px;
-padding: 20px;
-background-color: rgb(211, 207, 207);
-border-radius: 50px;
 
-}
-
-.image1-grid-item-right{
-border-radius: 30px;
-position: relative;
-height: 160px;
-width: 160px;
-display: flex;
-flex-direction: column;
-}
-
-.image1-grid-item-right img
-{
-width: 160px;
-height: 100px;
-border: 2px;
-padding: 10px;
-border-top-left-radius: 30px;
-border-top-right-radius: 30px;
-}
-*/
 /* IMAGE GALLERY */
 
 .header-activity{
 margin-left: 20px;
+margin-bottom: 20px;
+border : 1px solid blue;
 }
 
 
 .images-gallery
 {
-/*border: 1px solid black;*/
+border: 1px solid orange;
 font-family: "Raleway";
 margin: 20px 90px;
 }
@@ -772,6 +1205,7 @@ padding: 10px;
 
 .footer 
 {
+border: 1px dashed black;
 display: flex;
 margin-top: 40px;
 margin-left: 90px;
@@ -791,6 +1225,7 @@ flex: 1;
 
 .footer-item-left a {
   text-decoration: none;
+  color: black;
   }
   .footer-item-left a:hover {
     text-decoration: underline;
@@ -807,6 +1242,7 @@ flex: 1;
   
   .footer-item-center a {
     text-decoration: none;
+    color: black;
     }
 
     .footer-item-center a:hover {
@@ -824,19 +1260,36 @@ flex: 1;
     }
     .footer-item-right a {
       text-decoration: none;
+      color: black;
       }
 
       .footer-item-right a:hover {
         text-decoration: underline;
         }
 
-/*.image2 img 
-{
-	width: 150px;
-	height: auto;
-	margin-top: 80px;
-	size: auto;
-	border: 5px solid gray;
-	padding: 10px;
-	border-radius: 5px;
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
 }
