@@ -988,7 +988,7 @@ width: 150px
 
 .images-gallery
 {
-border: 1px solid orange;
+
 font-family: "Raleway";
 margin: 20px 80px;
 }
@@ -1600,7 +1600,7 @@ flex: 1;
 .footer-item-center {
   height: 120px;
   flex: 1;
-  border: 1px solid black;
+ 
   }
 
   .Our-Accomodations{
@@ -1619,7 +1619,7 @@ flex: 1;
 .footer-item-right {
     height: 120px;
     flex: 1;
-    border: 1px solid black;
+  
    
     }
 
