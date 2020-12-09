@@ -5,6 +5,8 @@ padding: 0;
 box-sizing: border-box;
 }
 
+
+
                 /* Header */
 .header {
 display: flex;
@@ -103,12 +105,12 @@ text-decoration: underline;
 .find 
 {
 font-style: 'Raleway';
-width: 500px;
+width: 50%;
 color: black;
 height: 50px;
 margin-top: 15px;
 margin-left: 100px;
-
+border: 1px solid black;
 margin-bottom: 10px;
 }
 
@@ -326,7 +328,11 @@ margin-left: 0px;
     text-decoration: none;
     margin-left: 100px;
     margin-right: 100px; 
- }
+    border: 1px solid black;
+    width: 55%;
+
+
+  }
 
  @media screen and (max-width: 1200px) and (min-width: 992px) {
   .links { 
@@ -357,19 +363,26 @@ margin-left: 0px;
   }
 
 .links-grid {
-  display: flex;
+  display: grid;
   text-decoration: none;
-  justify-content: flex-start;
+  grid-gap: 2px;
   text-decoration: none;
-  flex-wrap: wrap;
+  
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  /*justify-content: flex-start;
+  flex-wrap: wrap;*/
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .links-grid { 
-  display: flex;
+    display: grid;
+    
+    width: 60%;
+
+ /* display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around;*/
   }
   a {
     justify-content: center;
@@ -379,21 +392,25 @@ margin-left: 0px;
 
 @media screen and (max-width: 600px) {
   .links-grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    width: 60%;
+    /*
     display: flex;
     flex-flow: row wrap;  
   align-items: center;
   justify-content: space-around;
- 
+ */
   }
   }
 
  .Filters
  {
-  width: 70px;
+ 
   border-radius: 50px;
   color: black;
   height: 46px;
- 
+ border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,7 +420,7 @@ margin-left: 0px;
   .Filters { 
     height: 30px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -432,7 +449,7 @@ margin-left: 0px;
  
  .Low-Cost{
   border: 1px solid gray;
-  width: 130px;
+  
   border-radius: 50px;
   color: black;
   height: 46px;
@@ -517,7 +534,7 @@ margin-left: 0px;
 
 .Family-Friendly{
   border: 1px solid gray;
-  width: 160px;
+  
   border-radius: 50px;
   color: black;
   height: 46px;
@@ -567,7 +584,7 @@ margin-left: 0px;
 
 .Romantic{
   border: 1px solid gray;
-  width: 130px;
+ 
   border-radius: 50px;
   color: black;
   height: 46px;
@@ -618,7 +635,7 @@ margin-left: 0px;
 
 .Pets-Allowed{
   border: 1px solid gray;
-  width: 150px;
+
   border-radius: 50px;
   color: black;
   height: 46px;
@@ -675,10 +692,12 @@ margin-top: 5px;
 
 .images-grid-container
 {
-display: flex;
+border: 1px solid black;
 margin-left:100px;
 margin-right: 100px;
+
 justify-content: flex-start;
+display: flex;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
@@ -1663,7 +1682,7 @@ flex: 1;
 .footer-item-right {
     height: 120px;
     flex: 1;
-  
+   
    
     }
 
