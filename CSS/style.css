@@ -1071,25 +1071,24 @@ margin: 20px 80px;
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .images-gallery { 
-    margin-left: 30px;
-   margin-right: 30px;
+    margin-left: 20px;
+   margin-right: 20px;
     
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-gallery { 
-    margin-left: 30px;
-    margin-right: 30px;
-  }
+    margin-left: 20px;
+    margin-right: 20px;
 }
-
+}
 @media screen and (max-width: 600px) {
   .images-gallery { 
-     margin-left: 30px;
-     margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  }
+}
 
 .image-gallery-item
 {
@@ -1101,15 +1100,11 @@ grid-template-areas:
       'g1 g2i1 g3 g4i1 g5'
       'g1 g2i2 g3 g4i2 g5';
 background-color:  #DEEBFF ;
-border-top-right-radius: 30px;
-border-top-left-radius: 30px;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
 padding: 5px;
-border: 1px solid black;
 box-shadow: 0px 2px 20px rgb(211, 207, 207);
-/*flex-wrap: wrap;
-flex-flow: row wrap;
-display: flex;
-justify-content: space-evenly; */
+
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -1919,3 +1914,6 @@ flex: 1;
       .footer-item-right a:hover {
         text-decoration: underline;
         }
+
+
+
