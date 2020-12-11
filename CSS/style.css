@@ -1,8 +1,9 @@
 *{
-background-color white;
+
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Raleway', sans-serif;
 }
 
 
@@ -11,7 +12,6 @@ box-sizing: border-box;
 .header {
 display: flex;
 justify-content: space-between;
-
 margin-left: 100px;
 margin-right: 100px; 
 }
@@ -56,7 +56,7 @@ height: auto;
 color: #0065FC;
 text-decoration: none;
 padding: 5px;
-font-family: 'Raleway';	t
+font-family: 'Raleway', sans-serif;	
 font-size: 15px;  
 
 }
@@ -104,7 +104,7 @@ text-decoration: underline;
                 /* Text: "Find a place for your dream vacation" */
 .find 
 {
-font-style: 'Raleway';
+
 width: 50%;
 color: black;
 height: 50px;
@@ -156,8 +156,6 @@ margin-left: 100px;
   }
 
                 /* Search Bar */
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 .wrapper{
   margin-left: 100px;
@@ -251,7 +249,7 @@ margin-left: 0px;
   color: black;
   font-family: 'Raleway';
   text-transform: uppercase;
-  position: center;
+ 
  
 }
 
@@ -408,7 +406,6 @@ margin-left: 0px;
   border-radius: 50px;
   color: black;
   height: 46px;
-  border: 1px solid b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,7 +505,6 @@ margin-left: 0px;
    height: 44px;
    margin-right: 5px;
  
-   position: flex;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -711,21 +707,25 @@ display: flex;
   .images-grid-container { 
     margin-left: 30px;
     flex-flow: row wrap;
+    margin-right: 30px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-grid-container { 
     margin-right: 20px; 
-    flex-flow: row wrap;
+    flex-flow: column-reverse wrap;
     margin-left: 20px;
+    
+    
+  
   }
 }
 
 @media screen and (max-width: 600px) {
   .images-grid-container { 
     margin-right: 20px;
-    flex-flow: row wrap;
+    flex-flow: column-reverse wrap;
     margin-left: 20px;
   }
   }
@@ -738,22 +738,27 @@ height: auto;
 margin-bottom: 20px;
 margin-right: 50px;
 box-shadow: 0px 2px 20px rgb(211, 207, 207);
+
+
 }
 
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-grid { 
-    margin-right: 0px;
+    margin-right: 20px;
     height: auto;
     width: auto;
-  }
+    margin-top: 20px;
+}
 }
 
 @media screen and (max-width: 600px) {
   .images-grid { 
-    margin-right: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
     height: auto;
     width: auto;
+    margin-top : 20px;
   }
   }
 
@@ -786,7 +791,7 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
     flex-flow: row wrap;
     flex-wrap: wrap;
     height: auto;
- 
+ justify-content: center;
   }
 }
 
@@ -796,12 +801,13 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
     flex-flow: row wrap;
     flex-wrap: wrap;
     height: auto;
+    justify-content: center;
   }
   }
 
 .image1-grid-item{
   border-radius: 30px;
-  height: 190px;
+  height: 200px;
   width: 220px;
  
   box-shadow: 0px 2px 20px rgb(211, 207, 207);
@@ -810,27 +816,24 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .image1-grid-item { 
-    width: 170px;
-    height: 160px;
+    
     font-size: 13px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .image1-grid-item { 
-    width: 170px;
-    height: 160px;
+   
     font-size: 13px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .image1-grid-item { 
-    width: 170px;
-    height: 160px;
+    
     font-size: 13px;
   }
-}
+} 
 
 .image1-grid-item a{
   margin-left: 10px;
@@ -838,41 +841,19 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 
 .image1-grid-item img
 {
-width: 215px;
+width: 220px;
 height: 130px;
 padding: 5px;
 border-top-left-radius: 30px;
 border-top-right-radius: 30px;
 transition: .9s;
 cursor: pointer;
+alig
 }
 
-@media screen and (max-width: 992px) and (min-width: 768px) {
-  .image1-grid-item img { 
-    width: 170px;
-    height: 100px;
-    padding: 5px;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 600px) {
-  .image1-grid-item img { 
-    width: 170px;
-    height: 100px;
-    padding: 5px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .image1-grid-item img { 
-    width: 170px;
-    height: 100px;
-    padding: 5px;
-  }
-}
 
 .image1-grid-item img:hover{
-  transform: scale(1.3);
+  transform: scale(1.1);
   z-index: 2;
   box-shadow: 0px 2px 20px #fff;
 }
@@ -891,7 +872,8 @@ cursor: pointer;
 .show-more{
   height: 21px;
   margin-top: 10px;
-  width: 100px;
+  width: 120px;
+ 
  
 }
 
@@ -906,24 +888,54 @@ cursor: pointer;
 }
 
         /* Images on the right */
+.text-right{
+ margin-left: 20px;
+ 
+ width: 300px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .text-right { 
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .text-right { 
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text-right { 
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}
 
 .text-right h4{
   height: 21px;
   margin-top: 5px;
+  
+  width: 200px;
 }    
 
 .images-container-right
 {
 height: auto;
-width: 550px;
+width: 30%;
 border-radius: 30px; 
 box-shadow: 0px 2px 20px rgb(211, 207, 207);
+  
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .images-container-right { 
     margin-left: 30px;
    margin-right: 30px; 
+   width: auto;
   }
 }
 
@@ -931,6 +943,7 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
   .images-container-right { 
     margin-left: 30px;
     margin-right: 30px;
+    width: auto;
   }
 }
 
@@ -938,12 +951,13 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
   .images-container-right { 
      margin-left: 30px;
      margin-right: 30px;
+     width: auto;
   }
   }
 
 .images-container-right h4{
   margin-left: 20px;
- 
+
   width: 40%;
   
 }
@@ -956,6 +970,7 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
   align-items: center;
   height: 540px;
   border-radius: 30px;
+
 }
 
 .image1-item-right{
@@ -965,6 +980,7 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
   margin: 15px;
   display: flex;
   box-shadow: 0px 2px 20px rgb(211, 207, 207);
+ 
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -993,14 +1009,15 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 
 
 .image1-item-right a{
-  margin-left: 10px;
- 
+  margin-left: 5px;
   
+ 
+ 
 }
 
 .image1-item-right img
 {
-width: 200px;
+width: 160px;
 height: 150px;
 padding: 5px;
 border-top-left-radius: 30px;
@@ -1031,7 +1048,7 @@ cursor: pointer;
 }
 
 .image1-item-right img:hover{
-  transform: scale(1.3);
+  transform: scale(1.1);
   z-index: 2;
   box-shadow: 0px 1px 5px rgb(211, 207, 207);
   
@@ -1042,10 +1059,18 @@ cursor: pointer;
 }
 
 .name-star-right{
-  border-bottom-right-radius: 30px;
-  border-top-right-radius: 30px;
+
   margin-top: 10px;
+  font-size: 14px;
+display: flex;
+flex-direction: column;
 }
+
+.night-starting {
+  font-size: 12px;
+}
+
+
 
 
 /* IMAGE GALLERY */
@@ -1053,8 +1078,22 @@ cursor: pointer;
 .header-activity{
 margin-left: 15px;
 margin-bottom: 20px;
+width: 170px;
+border: 1px solid black;
+}
 
-width: 150px
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .header-activity { 
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+}
+@media screen and (max-width: 600px) {
+  .header-activity { 
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -1098,16 +1137,15 @@ margin: 20px 80px;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 grid-template-rows: auto;
-grid-gap: 10px;
+grid-gap: 50px;
 grid-template-areas: 
       'g1 g2i1 g3 g4i1 g5'
       'g1 g2i2 g3 g4i2 g5';
-background-color:  #DEEBFF ;
+
 border-top-right-radius: 20px;
 border-top-left-radius: 20px;
 padding: 5px;
 box-shadow: 0px 2px 20px rgb(211, 207, 207);
-
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -1145,13 +1183,14 @@ border-top-right-radius: 30px;
 border-top-left-radius: 30px;
 background-color:  #DEEBFF ;
 grid-area: g1;
+border: 1px solid black;
 
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .gallery-1 { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
     margin: 5px;
     margin-bottom: 20px;
@@ -1161,8 +1200,8 @@ grid-area: g1;
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .gallery-1 { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
     margin: 5px;
     margin-bottom: 20px;
@@ -1172,8 +1211,8 @@ grid-area: g1;
 
 @media screen and (max-width: 600px) {
   .gallery-1  { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
     margin: 5px;
     margin-bottom: 20px;
@@ -1196,16 +1235,16 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .gallery-1 img { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .gallery-1 img { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+  width: 220px;
   
   }
   }
@@ -1213,8 +1252,8 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 
 @media screen and (max-width: 600px) {
   .gallery-1 img { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+  width: 220px;
   }
   }
 
@@ -1233,21 +1272,19 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 .gallery-1 a
 {
 margin-left: 10px;
-background-color:  #DEEBFF ;
+
 }
   
 
 .gallery-2-item1{
-  background-color:  #DEEBFF ;
   grid-area: g2i1;
-  
   height: 160px;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .gallery-2-item1 { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     margin: 5px;
     margin-bottom: 20px;
     font-size: 13px;
@@ -1256,8 +1293,8 @@ background-color:  #DEEBFF ;
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .gallery-2-item1{ 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     margin: 5px;
     margin-bottom: 20px;
     font-size: 13px;
@@ -1266,8 +1303,8 @@ background-color:  #DEEBFF ;
 
 @media screen and (max-width: 600px) {
   .gallery-2-item1{ 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     margin: 5px;
     margin-bottom: 20px;
     font-size: 13px;
@@ -1287,22 +1324,22 @@ background-color:  #DEEBFF ;
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .gallery-2-item1 img { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .gallery-2-item1 img{ 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
   }
   }
 
 @media screen and (max-width: 600px) {
   .gallery-2-item1 img{ 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
   }
   }
 
@@ -1319,11 +1356,11 @@ background-color:  #DEEBFF ;
 
 .gallery-2-item1 a{
   margin-left: 10px;
-  background-color:  #DEEBFF ;
+
 }
 
 .gallery-2-item2{
-  background-color:  #DEEBFF ;
+
   grid-area: g2i2;
   
   height: 160px;
@@ -1331,8 +1368,8 @@ background-color:  #DEEBFF ;
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .gallery-2-item2 { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     margin: 5px;
     margin-bottom: 20px;
     font-size: 13px;
@@ -1341,8 +1378,8 @@ background-color:  #DEEBFF ;
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .gallery-2-item2{ 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     margin: 5px;
     margin-bottom: 20px;
     font-size: 13px;
@@ -1351,8 +1388,8 @@ background-color:  #DEEBFF ;
 
 @media screen and (max-width: 600px) {
   .gallery-2-item2{ 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     margin: 5px;
     margin-bottom: 20px;
     font-size: 13px;
@@ -1371,24 +1408,24 @@ background-color:  #DEEBFF ;
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .gallery-2-item2 img { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .gallery-2-item2 img{ 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
   
   }
   }
 
 @media screen and (max-width: 600px) {
   .gallery-2-item2 img{ 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
   }
   }
 
@@ -1405,7 +1442,7 @@ background-color:  #DEEBFF ;
 
 .gallery-2-item2 a{
   margin-left: 10px;
-  background-color:  #DEEBFF ;
+ 
  
 }
 
@@ -1414,7 +1451,7 @@ background-color:  #DEEBFF ;
 height: 330px;
 border-top-right-radius: 30px;
 border-top-left-radius: 30px;
-background-color:  #DEEBFF ;
+
 grid-area: g3;
 
 }
@@ -1423,8 +1460,8 @@ grid-area: g3;
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .gallery-3 { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
     margin: 5px;
     margin-bottom: 20px;
@@ -1433,8 +1470,8 @@ grid-area: g3;
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .gallery-3 { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
     margin: 5px;
     margin-bottom: 20px;
@@ -1444,8 +1481,8 @@ grid-area: g3;
 
 @media screen and (max-width: 600px) {
   .gallery-3  { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
     margin: 5px;
     margin-bottom: 20px;
@@ -1470,16 +1507,16 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .gallery-3 img { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .gallery-3 img { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
   }
   }
@@ -1487,8 +1524,8 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 
 @media screen and (max-width: 600px) {
   .gallery-3 img { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
   }
   }
@@ -1506,21 +1543,19 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 .gallery-3 a
 {
 margin-left: 10px;
-background-color:  #DEEBFF ;
+
 }
 
   .gallery-4-item1{
-    background-color:  #DEEBFF ;
     grid-area: g4i1;
-  
     height: 160px;
   }
 
   
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .gallery-4-item1 { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
     margin: 5px;
     margin-bottom: 20px;
@@ -1529,8 +1564,8 @@ background-color:  #DEEBFF ;
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .gallery-4-item1 { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
     margin: 5px;
     margin-bottom: 20px;
@@ -1540,8 +1575,8 @@ background-color:  #DEEBFF ;
 
 @media screen and (max-width: 600px) {
   .gallery-4-item1 { 
-    width: 170px;
-    height: 170px;
+    height: 200px;
+    width: 220px;
     font-size: 13px;
     margin: 5px;
     margin-bottom: 20px;
@@ -1568,8 +1603,8 @@ background-color:  #DEEBFF ;
   
   @media screen and (max-width: 768px) and (min-width: 600px) {
     .gallery-4-item1 img { 
-      width: 170px;
-      height: 170px;
+      height: 200px;
+      width: 220px;
       font-size: 13px;
     }
     }
@@ -1577,8 +1612,8 @@ background-color:  #DEEBFF ;
   
   @media screen and (max-width: 600px) {
     .gallery-4-item1 img { 
-      width: 170px;
-      height: 170px;
+      height: 200px;
+      width: 220px;
       font-size: 13px;
     }
     }
@@ -1595,20 +1630,18 @@ background-color:  #DEEBFF ;
 
   .gallery-4-item1 a{
     margin-left: 10px;
-    background-color:  #DEEBFF ;
+    
   }
   
   .gallery-4-item2{
-    background-color:  #DEEBFF ;
     grid-area: g4i2;
-   
     height: 160px;
   }
 
   @media screen and (max-width: 992px) and (min-width: 768px) {
     .gallery-4-item2 { 
-      width: 170px;
-      height: 170px;
+      height: 200px;
+      width: 220px;
       font-size: 13px;
       margin: 5px;
       margin-bottom: 20px;
@@ -1617,8 +1650,8 @@ background-color:  #DEEBFF ;
   
   @media screen and (max-width: 768px) and (min-width: 600px) {
     .gallery-4-item2 { 
-      width: 170px;
-      height: 170px;
+      height: 200px;
+      width: 220px;
       font-size: 13px;
       margin: 5px;
       margin-bottom: 20px;
@@ -1628,8 +1661,8 @@ background-color:  #DEEBFF ;
   
   @media screen and (max-width: 600px) {
     .gallery-4-item2 { 
-      width: 170px;
-      height: 170px;
+      height: 200px;
+  width: 220px; 
       font-size: 13px;
       margin: 5px;
       margin-bottom: 20px;
@@ -1649,16 +1682,16 @@ background-color:  #DEEBFF ;
 
   @media screen and (max-width: 992px) and (min-width: 768px) {
     .gallery-4-item2 img { 
-      width: 170px;
-      height: 170px;
+      height: 200px;
+      width: 220px;
       font-size: 13px;
     }
   }
   
   @media screen and (max-width: 768px) and (min-width: 600px) {
     .gallery-4-item2 img { 
-      width: 170px;
-      height: 170px;
+      height: 200px;
+      width: 220px;
       font-size: 13px;
     }
     }
@@ -1666,8 +1699,8 @@ background-color:  #DEEBFF ;
   
   @media screen and (max-width: 600px) {
     .gallery-4-item2 img { 
-      width: 170px;
-      height: 170px;
+      height: 200px;
+      width: 220px;
       font-size: 13px;
     }
     }
@@ -1685,17 +1718,17 @@ background-color:  #DEEBFF ;
   
 .gallery-4-item2 a{
 margin-left: 10px;
-background-color:  #DEEBFF ;
+
 }
 
 
-
+/*
 .gallery-5
 {
 height: 330px;
 border-top-right-radius: 30px;
 border-top-left-radius: 30px;
-background-color:  #DEEBFF ;
+
 grid-area: g5;
 }
 
@@ -1783,9 +1816,9 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 .gallery-5 a
 {
 margin-left: 10px;
-background-color:  #DEEBFF ;
-}
 
+}
+*/
 
 .footer 
 {
@@ -1816,7 +1849,7 @@ justify-content: space-around;
     margin-left: 30px;
     margin-right: 30px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
   }
   }
@@ -1920,5 +1953,3 @@ flex: 1;
 
 
 
-
-  
