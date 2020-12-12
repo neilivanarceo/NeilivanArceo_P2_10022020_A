@@ -769,7 +769,7 @@ background-color: rgb(201, 201, 201);
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-grid { 
-    margin: 20px;
+    margin: 15px;
     height: auto;
     width: auto;
    
@@ -779,7 +779,7 @@ background-color: rgb(201, 201, 201);
 
 @media screen and (max-width: 600px) {
   .images-grid { 
-    margin: 20px;
+    margin: 15px;
     height: auto;
     width: auto;
     
@@ -971,14 +971,14 @@ background-color: rgb(201, 201, 201);
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .images-container-right { 
    margin-left: 20px;
-   width: 400px;
+   width: 370px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-container-right { 
     margin-left: 20px;
-    width: 400px;
+    width: 370px;
   }
 }
 
@@ -1990,3 +1990,4 @@ flex: 1;
       .footer-item-right a:hover {
         text-decoration: underline;
         }
+
