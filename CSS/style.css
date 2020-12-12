@@ -110,6 +110,7 @@ color: black;
 height: 50px;
 margin-top: 10px;
 margin-left: 100px;
+margin-bottom: 20px;
 
 
 }
@@ -876,7 +877,6 @@ border-top-left-radius: 30px;
 border-top-right-radius: 30px;
 transition: .9s;
 cursor: pointer;
-alig
 }
 
 
@@ -901,8 +901,6 @@ alig
   height: 21px;
   margin-top: 10px;
   width: 120px;
- 
- 
 }
 
 .show-more a{
@@ -926,6 +924,7 @@ cursor: pointer;
   .text-right { 
     margin-left: 10px;
     font-size: 16px;
+    margin-right: 10px;
   }
 }
 
@@ -933,6 +932,7 @@ cursor: pointer;
   .text-right { 
     margin-left: 10px;
     font-size: 16px;
+    margin-right: 10px;
   }
 }
 
@@ -940,6 +940,7 @@ cursor: pointer;
   .text-right { 
     margin-left: 10px;
     font-size: 16px;
+    margin-right: 10px;
   }
 }
 
@@ -979,7 +980,7 @@ background-color: rgb(201, 201, 201);
   .images-container-right { 
      margin-left: 30px;
      margin-right: 30px;
-     width: 400px;
+     width: 370px;
   }
   }
 
@@ -1135,6 +1136,7 @@ margin: 20px 80px;
   .images-gallery { 
     margin-left: 30px;
    margin-right: 30px;
+   margin-top: 20px;
   }
 }
 
@@ -1142,7 +1144,7 @@ margin: 20px 80px;
   .images-gallery { 
     margin-left: 20px;
    margin-right: 20px;
-    
+   margin-top: 20px;
   }
 }
 
@@ -1150,12 +1152,14 @@ margin: 20px 80px;
   .images-gallery { 
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 20px;
 }
 }
 @media screen and (max-width: 600px) {
   .images-gallery { 
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -1724,7 +1728,7 @@ font-weight: bold;
   
   @media screen and (max-width: 768px) and (min-width: 600px) {
     .gallery-4-item2 img { 
-      height: 220px;
+      height: 200px;
       width: 220px;
       font-size: 13px;
     }
@@ -1985,3 +1989,5 @@ flex: 1;
       .footer-item-right a:hover {
         text-decoration: underline;
         }
+
+
