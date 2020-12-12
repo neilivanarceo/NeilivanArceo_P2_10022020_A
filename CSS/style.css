@@ -764,7 +764,6 @@ margin-bottom: 50px;
 margin-right: 50px;
 box-shadow: 0px 2px 20px rgb(211, 207, 207);
 background-color: rgb(201, 201, 201);
-
 }
 
 
@@ -773,7 +772,6 @@ background-color: rgb(201, 201, 201);
     margin: 20px;
     height: auto;
     width: auto;
-    
 }
 }
 
@@ -782,7 +780,6 @@ background-color: rgb(201, 201, 201);
     margin: 20px;
     height: auto;
     width: auto;
-    
   }
   }
 
@@ -800,7 +797,6 @@ background-color: rgb(201, 201, 201);
   justify-content: flex-start;
   flex-flow: row wrap;
   margin: 15px;
-
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -808,7 +804,9 @@ background-color: rgb(201, 201, 201);
     display: flex;
     flex-flow: row wrap;
    height: auto;
-   margin: auto;
+   
+   justify-content: center;
+   align-items: center;
   }
 }
 
@@ -818,8 +816,9 @@ background-color: rgb(201, 201, 201);
     flex-flow: row wrap;
     flex-wrap: wrap;
     height: auto;
- justify-content: center;
- margin: auto;
+    justify-content: center;
+    
+    align-items: center;
   }
 }
 
@@ -830,7 +829,8 @@ background-color: rgb(201, 201, 201);
     flex-wrap: wrap;
     height: auto;
     justify-content: center;
-    margin: auto;
+    
+    align-items: center;
   }
   }
 
@@ -1124,7 +1124,6 @@ width: 170px;
   }
 }
 
-
 .images-gallery
 {
 
@@ -1185,7 +1184,7 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
     flex-flow: row wrap;
     flex-wrap: wrap;
     justify-content: center;
-  
+    align-items: center;
   }
 }
 
@@ -1195,6 +1194,7 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
     flex-flow: row wrap;
     flex-wrap: wrap;
    justify-content: center;
+   align-items: center;
   }
 }
 
@@ -1204,6 +1204,7 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
     flex-flow: row wrap;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
   }
  
@@ -1212,10 +1213,7 @@ box-shadow: 0px 2px 20px rgb(211, 207, 207);
 height: 340px;
 border-top-right-radius: 30px;
 border-top-left-radius: 30px;
-
 grid-area: g1;
-
-
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -1224,8 +1222,7 @@ grid-area: g1;
     width: 220px;
     font-size: 13px;
     margin: 5px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
   }
 }
 
@@ -1236,7 +1233,6 @@ grid-area: g1;
     font-size: 13px;
     margin: 5px;
     margin-bottom: 20px;
-   
   }
   }
 
@@ -1989,5 +1985,3 @@ flex: 1;
       .footer-item-right a:hover {
         text-decoration: underline;
         }
-
-
