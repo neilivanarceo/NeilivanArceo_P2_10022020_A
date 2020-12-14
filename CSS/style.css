@@ -725,6 +725,7 @@ margin-left:100px;
 margin-right: 100px;
 justify-content: flex-start;
 display: flex;
+
 }
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
@@ -750,7 +751,6 @@ display: flex;
     margin-right: 10px;
     flex-flow: column-reverse wrap;
     margin-left: 10px;
-    
   }
   }
 
@@ -781,9 +781,7 @@ background-color: rgb(201, 201, 201);
   .images-grid { 
     margin: 15px;
     height: auto;
-    width: 100%;
-    
-    
+    width: auto;
   }
   }
 
@@ -824,8 +822,8 @@ background-color: rgb(201, 201, 201);
     height: auto;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
-  margin-bottom: 15px;
+   margin: 15px;
+   width: auto;
   }
 }
 
@@ -837,8 +835,8 @@ background-color: rgb(201, 201, 201);
     height: auto;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
-  margin-bottom: 15px;
+   margin: 15px;
+   width: auto;
   }
   }
 
@@ -853,7 +851,6 @@ background-color: rgb(201, 201, 201);
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .image1-grid-item { 
-    
     font-size: 13px;
   }
 }
@@ -924,7 +921,7 @@ cursor: pointer;
         /* Images on the right */
 .text-right{
  margin-left: 20px;
- 
+
  width: 300px;
 }
 
@@ -962,6 +959,7 @@ cursor: pointer;
 .images-container-right
 {
 height: auto;
+
 width: 30%;
 border-radius: 30px; 
 box-shadow: 0px 2px 20px rgb(211, 207, 207);
@@ -972,6 +970,7 @@ background-color: rgb(201, 201, 201);
   .images-container-right { 
    margin-left: 20px;
    width: 370px;
+   margin-right: 20px;
   }
 }
 
@@ -979,13 +978,15 @@ background-color: rgb(201, 201, 201);
   .images-container-right { 
     margin-left: 20px;
     width: auto;
+    margin-right: 30px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .images-container-right { 
     margin-left: 20px;
-     width: 100%;
+     width: auto;
+     margin-right: 20px;
   }
   }
 
@@ -1005,6 +1006,22 @@ background-color: rgb(201, 201, 201);
   height: 540px;
   border-radius: 30px;
 }
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  .image-grid-right { 
+    margin-left: 20px;
+    width: auto;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-grid-right { 
+    margin-left: 20px;
+     width: 100%;
+     margin-right: 20px;
+  }
+  }
 
 
 
@@ -1991,7 +2008,3 @@ flex: 1;
         text-decoration: underline;
         }
 
-
-
-
-         
