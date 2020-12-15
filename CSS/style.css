@@ -699,7 +699,6 @@ margin-left: 0px;
   }
  }
  
- 
  @media screen and (max-width: 768px) and (min-width: 600px) {
   .more-accom { 
     margin-left: 30px;
@@ -716,8 +715,6 @@ margin-left: 0px;
   }
   }
 
- 
-
           /* IMAGES LEFT */
  
 #Accom h4
@@ -733,7 +730,6 @@ margin-left:100px;
 margin-right: 100px;
 justify-content: flex-start;
 display: flex;
-
 }
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
@@ -746,7 +742,7 @@ display: flex;
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-grid-container { 
-    margin-right: 10px; 
+    margin-right: 20px; 
     flex-flow: column-reverse wrap;
     margin-left: 10px;
    
@@ -756,7 +752,7 @@ display: flex;
 
 @media screen and (max-width: 600px) {
   .images-grid-container { 
-    margin-right: 10px;
+    margin-right: 20px;
     flex-flow: column-reverse wrap;
     margin-left: 10px;
   }
@@ -1202,7 +1198,6 @@ grid-gap: 30px;
 grid-template-areas: 
       'g1 g2i1 g3 g4i1 g5'
       'g1 g2i2 g3 g4i2 g5';
-
 border-top-right-radius: 20px;
 border-top-left-radius: 20px;
 padding: 20px;
