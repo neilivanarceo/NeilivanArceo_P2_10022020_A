@@ -781,8 +781,6 @@ background-color: rgb(201, 201, 201);
     margin: 15px;
     height: auto;
     width: auto;
-   
- 
 }
 }
 
@@ -790,7 +788,7 @@ background-color: rgb(201, 201, 201);
   .images-grid { 
     margin: 15px;
     height: auto;
-    width: auto;
+    width: 100%;
   }
   }
 
@@ -981,7 +979,7 @@ background-color: rgb(201, 201, 201);
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .images-container-right { 
    margin-left: 20px;
-   width: 400px;
+   width: auto;
    margin-right: 20px;
   }
 }
@@ -989,7 +987,7 @@ background-color: rgb(201, 201, 201);
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-container-right { 
     margin-left: 20px;
-    width: 400px;
+    width: auto;
     margin-right: 20px;
   }
 }
@@ -997,14 +995,13 @@ background-color: rgb(201, 201, 201);
 @media screen and (max-width: 600px) {
   .images-container-right { 
     margin-left: 20px;
-     width: 400px;
+     width: 100%;
      margin-right: 20px;
   }
   }
 
 .images-container-right h4{
   margin-left: 20px;
-
   width: 40%;
   
 }
@@ -1017,7 +1014,6 @@ background-color: rgb(201, 201, 201);
   align-items: center;
   height: 540px;
   border-radius: 30px;  
-
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
@@ -1025,6 +1021,7 @@ background-color: rgb(201, 201, 201);
     margin-left: 20px;
     width: auto;
     margin-right: 30px;
+    justify-content: center;
   }
 }
 
@@ -1037,8 +1034,6 @@ background-color: rgb(201, 201, 201);
      align-items: center;
   }
   }
-
-
 
 .image1-item-right{
   border-radius: 30px;
