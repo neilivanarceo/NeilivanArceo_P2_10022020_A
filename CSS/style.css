@@ -726,7 +726,6 @@ margin-top: 5px;
 .images-grid-container
 {
 
-border: 1px solid black;
 justify-content: flex-start;
 display: flex;
 }
