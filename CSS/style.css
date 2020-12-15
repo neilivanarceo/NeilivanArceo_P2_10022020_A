@@ -726,8 +726,7 @@ margin-top: 5px;
 .images-grid-container
 {
 
-margin-left:100px;
-margin-right: 100px;
+border: 1px solid black;
 justify-content: flex-start;
 display: flex;
 }
@@ -744,7 +743,7 @@ display: flex;
   .images-grid-container { 
     margin-right: 30px; 
     flex-flow: column-reverse wrap;
-    margin-left: 20px;
+    margin-left: 30px;
    
   }
   }
@@ -754,7 +753,7 @@ display: flex;
   .images-grid-container { 
     margin-right: 30px;
     flex-flow: column-reverse wrap;
-    margin-left: 20px;
+    margin-left: 30px;
   }
   }
 
@@ -774,15 +773,17 @@ background-color: rgb(201, 201, 201);
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-grid { 
-    margin: 15px;
+    margin-bottom: 15px;
     height: auto;
     width: auto;
+    margin-top: 15px;
 }
 }
 
 @media screen and (max-width: 600px) {
   .images-grid { 
-    margin: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     height: auto;
     width: 100%;
   }
@@ -973,25 +974,25 @@ background-color: rgb(201, 201, 201);
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .images-container-right { 
-   margin-left: 20px;
+ 
    width: 40%;
-   margin-right: 20px;
+  
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-container-right { 
-    margin-left: 20px;
+    
     width: 60%;
-    margin-right: 20px;
+   
   }
 }
 
 @media screen and (max-width: 600px) {
   .images-container-right { 
-    margin-left: 20px;
+  
      width: 100%;
-     margin-right: 20px;  
+     
   }
   }
 
@@ -2010,4 +2011,3 @@ flex: 1;
       .footer-item-right a:hover {
         text-decoration: underline;
         }
-
