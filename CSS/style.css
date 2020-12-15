@@ -733,17 +733,17 @@ display: flex;
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
   .images-grid-container { 
-    margin-left: 30px;
+    margin-left: 20px;
     flex-flow: row wrap;
-    margin-right: 30px;
+    margin-right: 20px;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-grid-container { 
-    margin-right: 30px; 
+    margin-right: 20px; 
     flex-flow: column-reverse wrap;
-    margin-left: 30px;
+    margin-left: 20px;
    
   }
   }
@@ -751,9 +751,9 @@ display: flex;
 
 @media screen and (max-width: 600px) {
   .images-grid-container { 
-    margin-right: 30px;
+    margin-right: 20px;
     flex-flow: column-reverse wrap;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   }
 
@@ -766,26 +766,39 @@ margin-bottom: 50px;
 margin-right: 50px;
 box-shadow: 0px 2px 20px rgb(211, 207, 207);
 background-color: rgb(201, 201, 201);
+margin-left: 100px;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .images-grid { 
+    margin-left: 0px;
+}
+ }
 
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .images-grid { 
+   margin-left: 0px;
+  }
+ }
 
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-grid { 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     height: auto;
     width: auto;
-    margin-top: 15px;
+    margin-left: 0px;
 }
 }
 
 @media screen and (max-width: 600px) {
   .images-grid { 
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     height: auto;
     width: 100%;
+    margin-left: 0px;
   }
   }
 
@@ -974,15 +987,15 @@ background-color: rgb(201, 201, 201);
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .images-container-right { 
- 
+    margin-bottom: 20px;
    width: 40%;
-  
+   
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-container-right { 
-    
+    margin-bottom: 20px;
     width: 60%;
    
   }
@@ -990,9 +1003,9 @@ background-color: rgb(201, 201, 201);
 
 @media screen and (max-width: 600px) {
   .images-container-right { 
-  
+    margin-bottom: 20px;
      width: 100%;
-     
+   
   }
   }
 
@@ -2011,3 +2024,4 @@ flex: 1;
       .footer-item-right a:hover {
         text-decoration: underline;
         }
+
