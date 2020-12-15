@@ -981,7 +981,7 @@ background-color: rgb(201, 201, 201);
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .images-container-right { 
    margin-left: 20px;
-   width: 370px;
+   width: 400px;
    margin-right: 20px;
   }
 }
@@ -989,15 +989,15 @@ background-color: rgb(201, 201, 201);
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .images-container-right { 
     margin-left: 20px;
-    width: auto;
-    margin-right: 30px;
+    width: 400px;
+    margin-right: 20px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .images-container-right { 
     margin-left: 20px;
-     width: auto;
+     width: 400px;
      margin-right: 20px;
   }
   }
@@ -1016,7 +1016,7 @@ background-color: rgb(201, 201, 201);
   flex-wrap: wrap;
   align-items: center;
   height: 540px;
-  border-radius: 30px;
+  border-radius: 30px;  
 
 }
 
@@ -2021,3 +2021,4 @@ flex: 1;
       .footer-item-right a:hover {
         text-decoration: underline;
         }
+
