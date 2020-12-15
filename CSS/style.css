@@ -771,8 +771,9 @@ margin-bottom: 50px;
 margin-right: 50px;
 box-shadow: 0px 2px 20px rgb(211, 207, 207);
 background-color: rgb(201, 201, 201);
-
 }
+
+
 
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
@@ -806,8 +807,7 @@ background-color: rgb(201, 201, 201);
   width: 700px;
   justify-content: flex-start;
   flex-flow: row wrap;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px;
    
 }
 
@@ -2021,4 +2021,3 @@ flex: 1;
       .footer-item-right a:hover {
         text-decoration: underline;
         }
-
